@@ -1,0 +1,107 @@
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.message-command,
+.message-app-header {
+    padding: 5px 15px 5px 15px;
+    background-color: #252657!important;
+}
+
+.message-app-content {
+    margin: 15px;
+}
+
+.message-app-persona-card {
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 15px;
+}
+
+.full-width {
+    width: 100%!important;
+}
+
+.send-message-row {
+    margin-top: 5px;
+}
+
+.send-button {
+    margin-top: 2px;
+    height: 25px;
+    width: 100%!important;
+    margin: 0 0 0 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 100%;
+}
+
+.messages-container {
+    height: 75vh;
+    max-height: 75vh;
+    overflow-y: overlay;
+    overflow-x: hidden;
+    background: rgba(255, 255, 255, 0.7)!important;
+}
+
+.active-conversation {
+    text-decoration: underline;
+}
+
+.Header-title {
+    margin-top: 5px!important;
+}
+
+.account-drop {
+    right: 0;
+    position: fixed;
+    top: 0!important;
+}
+
+.account-label {
+    color: white;
+}
+
+.account-label:hover {
+    color: white!important;
+}
+
+.Header-title {
+    margin-bottom: 0;
+}
+
+.messagesApp-command-bar {
+    overflow-x: overlay;
+    overflow-y: hidden;
+    background: rgba(244, 244, 244, 0.7);
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    filter: blur(15px);
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    background: url(andy-matthews-217218.jpg);
+    background-size: cover;
+    display: block;
+}
+
+.main-content {
+    top: 0;
+    position: absolute;
+}
+
+.ms-PersonaCard {
+    background: rgba(255, 255, 255, 0.7)!important;
+}
+
+.no-left-padding {
+    padding-left: 0px!important;
+}
+
+.no-right-padding {
+    padding-right: 0px!important;
+}
