@@ -133,3 +133,9 @@ body {
 .ms-fontColor-white-important {
     color: white!important;
 }
+
+.is-positioned {
+    left: auto!important;
+    right: 0;
+    position: fixed;
+}
