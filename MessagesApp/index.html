@@ -5,8 +5,8 @@
     <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/css/fabric.min.css" />
     <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/css/fabric.components.min.css" />
     <script src="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.2.0/js/fabric.min.js"></script>
-</head>
-<link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css"> </head>
 
 <body>
     <div class='bg'></div>
@@ -15,27 +15,41 @@
             <div class="Header-text ms-fontColor-white">
                 <div class="u-contentCenter">
                     <h3 class="Header-title"> <i class="ms-Icon ms-Icon--InboxCheck" aria-hidden="true"></i> Message App </h3>
-                    <div class="ms-CommandButton ms-CommandButton--inline account-drop">
-                        <button class=" ms-CommandButton-button "> <span class="ms-CommandButton-icon ms-fontColor-themePrimary "><i class="ms-Icon ms-Icon--People "></i></span> <span class="ms-CommandButton-label account-label ">Account</span> <span class="ms-CommandButton-dropdownIcon account-label"><i class="ms-Icon ms-Icon--ChevronDown "></i></span> </button>
-                        <ul class="ms-ContextualMenu is-opened ms-ContextualMenu--hasIcons ">
-                            <li class="ms-ContextualMenu-item "> <a class="ms-ContextualMenu-link " tabindex="1 ">Settings</a> <i class="ms-Icon ms-Icon--Settings "></i> </li>
-                            <li class="ms-ContextualMenu-item "> <a class="ms-ContextualMenu-link " tabindex="1 ">Information</a> <i class="ms-Icon ms-Icon--Document "></i> </li>
-                            <li class="ms-ContextualMenu-item ms-ContextualMenu-item--divider "></li>
-                            <li class="ms-ContextualMenu-item "> <a class="ms-ContextualMenu-link " tabindex="1 ">Logout</a> <i class="ms-Icon ms-Icon--OutOfOffice "></i> </li>
-                        </ul>
+                    <div class="right-drops">
+                        <div class="ms-CommandButton ms-CommandButton--inline conversations-drop ms-u-hiddenMdUp">
+                            <button class=" ms-CommandButton-button "> <span class="ms-CommandButton-icon ms-fontColor-themePrimary "><i class="ms-Icon ms-Icon--Message "></i></span> <span class="ms-CommandButton-label  ms-fontColor-white-important">Conversations</span> <span class="ms-CommandButton-dropdownIcon  ms-fontColor-white"><i class="ms-Icon ms-Icon--ChevronDown "></i></span> </button>
+                            <ul class="ms-ContextualMenu is-opened ms-ContextualMenu--hasIcons ">
+                                <li class="ms-ContextualMenu-item "> <a class="ms-ContextualMenu-link" tabindex="1 ">Sharepoint Team</a> <i class="ms-Icon ms-Icon--CircleFill  ms-fontColor-themePrimary"></i> </li>
+                                <li class="ms-ContextualMenu-item "> <a class="ms-ContextualMenu-link" tabindex="1 ">Customer 1</a> <i class="ms-Icon ms-Icon--CircleRing  ms-fontColor-themePrimary"></i> </li>
+                                <li class="ms-ContextualMenu-item "> <a class="ms-ContextualMenu-link" tabindex="1 ">Customer 2</a> <i class="ms-Icon ms-Icon--CircleRing  ms-fontColor-themePrimary"></i> </li>
+                                <li class="ms-ContextualMenu-item ms-ContextualMenu-item--divider "></li>
+                                <li class="ms-ContextualMenu-item  ms-fontColor-themePrimary"> <a class="ms-ContextualMenu-link " tabindex="1 ">New conversation</a> <i class="ms-Icon ms-Icon--AddTo"></i> </li>
+                            </ul>
+                        </div>
+                        <div class="ms-CommandButton ms-CommandButton--inline account-drop">
+                            <button class=" ms-CommandButton-button "> <span class="ms-CommandButton-icon ms-fontColor-themePrimary">
+                                    <i class="ms-Icon ms-Icon--People "></i>
+                                </span> <span class="ms-CommandButton-label account-label ms-fontColor-white ">Account</span> <span class="ms-CommandButton-dropdownIcon ms-fontColor-white"><i class="ms-Icon ms-Icon--ChevronDown "></i></span></button>
+                            <ul class="ms-ContextualMenu is-opened ms-ContextualMenu--hasIcons ">
+                                <li class="ms-ContextualMenu-item "> <a class="ms-ContextualMenu-link " tabindex="1 ">Settings</a> <i class="ms-Icon ms-Icon--Settings "></i> </li>
+                                <li class="ms-ContextualMenu-item "> <a class="ms-ContextualMenu-link " tabindex="1 ">Information</a> <i class="ms-Icon ms-Icon--Document "></i> </li>
+                                <li class="ms-ContextualMenu-item ms-ContextualMenu-item--divider "></li>
+                                <li class="ms-ContextualMenu-item "> <a class="ms-ContextualMenu-link " tabindex="1 ">Logout</a> <i class="ms-Icon ms-Icon--OutOfOffice "></i> </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="ms-CommandBar messagesApp-command-bar">
+        <div class="ms-CommandBar messagesApp-command-bar  ms-u-hiddenSm">
             <div class="ms-CommandButton ms-CommandButton--inline">
-                <button class="ms-CommandButton-button"> <span class="ms-CommandButton-icon ms-fontColor-green"><i class="ms-Icon ms-Icon--CircleFill"></i></span> <span class="ms-CommandButton-label active-conversation">Sharepoint Team</span> </button>
+                <button class="ms-CommandButton-button"> <span class="ms-CommandButton-icon ms-fontColor-blue"><i class="ms-Icon ms-Icon--CircleFill"></i></span> <span class="ms-CommandButton-label active-conversation">Sharepoint Team</span> </button>
             </div>
             <div class="ms-CommandButton ms-CommandButton--inline">
-                <button class="ms-CommandButton-button"> <span class="ms-CommandButton-icon ms-fontColor-green"><i class="ms-Icon ms-Icon--CircleRing"></i></span> <span class="ms-CommandButton-label">Customer1</span> </button>
+                <button class="ms-CommandButton-button"> <span class="ms-CommandButton-icon ms-fontColor-blue"><i class="ms-Icon ms-Icon--CircleRing"></i></span> <span class="ms-CommandButton-label">Customer1</span> </button>
             </div>
             <div class="ms-CommandButton ms-CommandButton--inline">
-                <button class="ms-CommandButton-button"> <span class="ms-CommandButton-icon ms-fontColor-green"><i class="ms-Icon ms-Icon--CircleRing"></i></span> <span class="ms-CommandButton-label">Customer2</span> </button>
+                <button class="ms-CommandButton-button"> <span class="ms-CommandButton-icon ms-fontColor-blue"><i class="ms-Icon ms-Icon--CircleRing"></i></span> <span class="ms-CommandButton-label">Customer2</span> </button>
             </div>
             <div class="ms-CommandButton ms-CommandButton--inline">
                 <button class="ms-CommandButton-button"> <span class="ms-CommandButton-icon ms-fontColor-blue"><i class="ms-Icon ms-Icon--AddTo"></i></span> <span class="ms-CommandButton-label">New conversation</span> </button>
@@ -139,6 +153,9 @@
                 </div>
             </div>
         </div>
+        <footer class='message-app-footer ms-fontColor-white ms-u-smHidden ms-u-mdHidden ms-u-lgHidden'>
+            <p>Created by: Mateusz Chodkowski 2017</p>
+        </footer>
     </div>
     <script type="text/javascript ">
         var CommandButtonElements = document.querySelectorAll(".ms-CommandButton ");

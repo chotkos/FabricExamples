@@ -52,11 +52,16 @@ body {
     margin-top: 5px!important;
 }
 
-.account-drop {
-    right: 0;
+.right-drops {
+    display: inline-block;
+    right: 15px;
     position: fixed;
     top: 0!important;
 }
+
+.account-drop {}
+
+.conversations-drop {}
 
 .account-label {
     color: white;
@@ -108,4 +113,23 @@ body {
 
 .contacts-col {
     margin-top: 15px;
+}
+
+.message-app-footer {
+    background: rgba(37, 38, 87, 0.5)!important;
+    padding: 5px 15px 0px 15px;
+    margin-top: 15px;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    border-top: solid 1px rgb(37, 38, 87);
+}
+
+.menu-right-bottom {
+    right: 0;
+    position: fixed;
+}
+
+.ms-fontColor-white-important {
+    color: white!important;
 }
