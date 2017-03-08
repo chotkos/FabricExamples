@@ -10,7 +10,7 @@ body {
 }
 
 .message-app-content {
-    margin: 15px;
+    margin: 0px 0px 0px 0px;
 }
 
 .message-app-persona-card {
@@ -73,7 +73,7 @@ body {
 .messagesApp-command-bar {
     overflow-x: overlay;
     overflow-y: hidden;
-    background: rgba(244, 244, 244, 0.7);
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .bg {
@@ -104,4 +104,8 @@ body {
 
 .no-right-padding {
     padding-right: 0px!important;
+}
+
+.contacts-col {
+    margin-top: 15px;
 }
